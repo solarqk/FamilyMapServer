@@ -18,7 +18,7 @@ public class EventGenerator {
         if (person.getFatherID() == null && person.getMotherID() == null && person.getSpouseID() == null && kidsBirth == null) {
             year = getRandNumber(2005, 1990);
 
-            event = new EventModel(person.getFirstName(), person.getAssociatedUsername(), person.getPersonID(),
+            event = new EventModel(giveRandomName(), person.getAssociatedUsername(), person.getPersonID(),
                     location.getLatitude(), location.getLongitude(), location.getCountry(),
                     location.getCity(), "birth", year);
             return event;
